@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --primary:#1f2e88;
+    --secondary:#2f66d4;
+    --hover: #a2d9f5;
+    --black:#333;
+    --white:#fff;
+    --light-color:#666;
+    --light-bg:#eee;
+    --border:.2rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+/* start header*/
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    
+}
+
+.nav_new{
+    margin-left: auto;
+
+}
+
+.nav_new li{
+    padding: 10px;
+    transition: all .3s ease-in-out;
+
+}
+.nav_new .nav-link:hover{
+    color: var(--primary);
+
+}
+.navbar-toggler:focus,.navbar-toggler:hover{
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+}
+@media (max-width:768px) {
+    .navbar-brand{
+        margin: 0;
+    }
+    .nav_new{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+/*dropdown-menu*/
+.dropdown-menu{
+    padding: 2px;
+}
+.dropdown-item{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+
+
+}
+/*dropdown-menu*/
+
+/* end header*/
+/* carousel*/
+
+.leading-head{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    z-index: 1;
+    color: #222222;
+    font-style: normal;
+    align-items: center;
+
+
+}
+.leading-head h1{
+    font-size: 48px;
+    text-transform: none;
+    font-weight: 600;
+    color: #222222;
+    padding-bottom: 30px;
+    
+
+}
+
+.carousel{
+    top: 70px;
+    
+}
+
+.carousel .item  {
+    
+    min-height: 120vh;   
+    background-size:cover;
+
+
+}
+@media (max-width :700px) {
+    .carousel { 
+        background-image: none !important;
+    }
+    
+}
+
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: var(--primary);
+
+}
+/* carousel*/
+
+
+/* about us */
+.about{
+    background: var(--light-bg);
+}
+
+.box{
+
+    margin: 120px 0 ;
+
+}
+.box h3{
+    text-align: center;
+}
+
+/* about end */
+
+
+/*  services */
+
+.box_sevice{
+    padding: 30px 0;
+    margin: 50px 0;
+    background: var(--light-bg);
+    border-radius: 10px;
+    
+}
+.box_sevice:hover{
+    background: var(--hover);
+    
+}
+/*  services */
+/*  Our APP */
+
+.icons{
+    display: flex; 
+    justify-content: space-evenly;
+     align-items: center;
+}
+/*  Our APP */
+
+
+
+
+/* footer */
+.footer{
+    background: var(--light-bg);
+    text-align: center;
+
+}
+
+
+
+.footer .share{
+    margin-top: .2rem;
+}
+
+.footer .share a{
+    font-size: 30px;
+    margin-right: 10px;
+    text-decoration: none;
+
+
+}
+
+
+/* footer ends */
+
